@@ -1,0 +1,5 @@
+https://ithelp.ithome.com.tw/articles/10188263
+在建立輪詢時使用，讓我們不斷地發 request 來更新畫面。
+
+這個範例其實就是模仿在即時同步斷線時，利用 catch 返回一個新的 observable，
+這個 observable 會先送出錯誤訊息並且把原本的 observable 延遲 5 秒再做合併，雖然這只是一個模仿，但它清楚的展示了 RxJS 在做錯誤處理時的靈活性。

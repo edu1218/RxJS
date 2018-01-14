@@ -1,0 +1,4 @@
+Observable是時間軸加上時間點上的消息
+-------m------n-----1-------f-------->
+           我是Observable
+所以的oprator的轉換後的Observable也是這種形式

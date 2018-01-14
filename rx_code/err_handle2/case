@@ -1,0 +1,12 @@
+https://ithelp.ithome.com.tw/articles/10188805
+
+一個observer例外後其他的observer也會被停止
+
+就是在某個 observer 發生錯誤卻沒有做錯誤處理時，
+就會影響到別的訂閱
+
+那要如何解決這個問題呢？ 
+目前最簡單的方式當然是盡可能地把所有 observer 的錯誤處理加進去，
+這樣一來就不會有例外發生
+
+另一種解法是用 Scheduler

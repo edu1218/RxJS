@@ -1,0 +1,24 @@
+01:array的功能
+02:observer
+03:iterator,Iterator Pattern 雖然很單純，但同時帶來了兩個優勢
+    3.1第一它漸進式取得資料的特性可以拿來做延遲運算(Lazy evaluation)，讓我們能用它來處理大資料結構。
+    3.2第二因為 iterator 本身是序列，所以可以實作所有陣列的運算方法像 map, filter... 等！
+
+
+04:https://ithelp.ithome.com.tw/articles/10187333
+
+05:https://ithelp.ithome.com.tw/articles/10188554 實際運作機制
+
+                           codeflow           
+     time      :----------------------------------------------------->
+                               |
+     observable:---------------m0-------->根據規則、或事件送出消息 
+                               | 經過operator  
+                               m1
+                               | 經過operator
+                               m2
+                               | subscibe(value)
+                               ˇ
+                              輸出
+
+                

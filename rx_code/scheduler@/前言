@@ -1,0 +1,8 @@
+什麼是 Scheduler？
+Scheduler 控制一個 observable 的訂閱什麼時候開始，
+以及發送元素什麼時候送達，主要由以下三個元素所組成
+
+Scheduler 是一個資料結構。 它知道如何根據優先級或其他標準來儲存並佇列任務。
+Scheduler 是一個執行環境。 它意味著任務何時何地被執行，比如像是 立即執行、在回呼(callback)中執行、setTimeout 中執行、animation frame 中執行
+Scheduler 是一個虛擬時鐘。 它透過 now() 這個方法提供了時間的概念，我們可以讓任務在特定的時間點被執行。
+簡言之 Scheduler 會影響 Observable 開始執行及元素送達的時機
